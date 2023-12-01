@@ -7,7 +7,7 @@ const CompanyValues = () => {
   const { name: nameVal, desc: descVal } = mainValueArticleContent;
   return (
     <section className="containerGlobal">
-      <Article titleFirst={false} name={nameVal} desc={descVal} />
+      <Article titleFirst={true} name={nameVal} desc={descVal} />
       <Values />
     </section>
   );

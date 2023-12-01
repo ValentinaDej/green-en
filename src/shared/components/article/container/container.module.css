@@ -1,5 +1,6 @@
 .container {
   display: block;
+  align-items: end;
   padding-top: 36px;
 }
 

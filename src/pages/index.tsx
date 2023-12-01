@@ -5,6 +5,7 @@ import {
   AboutUs,
   CompanyValues,
   ProductionCounter,
+  Cases,
   Faq,
 } from "@/components";
 
@@ -23,6 +24,7 @@ export default function Home() {
         <AboutUs />
         <CompanyValues />
         <ProductionCounter />
+        <Cases />
         <Faq />
       </main>
     </>

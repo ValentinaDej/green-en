@@ -12,9 +12,8 @@
   text-align: center;
 }
 
-.separator {
+/* .separator {
   grid-column: 2;
-  grid-row: 2;
   grid-row: 2;
   background: var(--color-primary-600);
   width: 1px;
@@ -23,6 +22,22 @@
 
 .separator:nth-of-type(2) {
   grid-row: 4;
+} */
+
+.separator {
+  grid-column: 2;
+  background: var(--color-primary-600);
+  width: 1px;
+}
+
+.separator:first-of-type {
+  grid-row: 2;
+  height: 48px;
+}
+
+.separator:last-of-type {
+  grid-row: 4;
+  height: 48px;
 }
 
 .counter {
@@ -78,7 +93,11 @@
     font-size: 48px;
   }
 
-  .separator {
+  .separator:first-of-type {
+    height: 87px;
+  }
+
+  .separator:last-of-type {
     height: 87px;
   }
 

@@ -14,29 +14,59 @@
   text-align: justify;
 }
 
+.text {
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.button {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
-    grid-template-areas: "title line description";
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas:
+      "description line title"
+      "description line text"
+      "description line button";
     padding-top: 100px;
+    gap: 12px;
   }
 
   .line {
     grid-area: line;
     width: 1px;
+    align-self: stretch;
   }
 
   .title {
-    grid-area: description;
+    grid-area: title;
+    align-self: start;
     font-size: 36px;
     padding-bottom: 0px;
     padding-left: 10px;
   }
 
   .description {
-    grid-area: title;
-    padding-right: 65px;
+    grid-area: description;
+    grid-row: 1 / span 3;
+    padding-right: 0px;
+  }
+
+  .text {
+    grid-area: text;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .button {
+    grid-area: button;
+    padding-bottom: 16px;
   }
 }
 
@@ -46,10 +76,11 @@
   }
 
   .title {
-    padding-left: 130px;
+    font-size: 48px;
+    padding-left: 120px;
   }
 
   .description {
-    padding-right: 160px;
+    padding-right: 0px;
   }
 }

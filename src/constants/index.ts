@@ -28,12 +28,12 @@ export const socialLinks = [
 
 export const introductionArticleContent = {
   name: "Let`s start with small start with ourselves",
-  desc: "ECOSOLUTION is the largest group of companies in Western Ukraine, which is engaged in the development and implementation of renewable environmentally friendly energy sources. We are the first privately owned company that received a loan from the European Bank for Reconstruction and Development (EBRD) and built the first wind farm in Western Ukraine. During the company's work, a number of projects in the field of energy were implemented. At the same time, new investment projects, in particular small hydropower and biofuels, are constantly being developed and developed with existing objects.",
+  desc: "ECOSOLUTION is the largest group of companies in Western Ukraine, which is engaged in the development and implementation of renewable environmentally friendly energy sources. We are the first privately owned company that received a loan from the European Bank for Reconstruction and Development (EBRD) and built the first wind farm in Western Ukraine. During the company`s work, a number of projects in the field of energy were implemented. At the same time, new investment projects, in particular small hydropower and biofuels, are constantly being developed and developed with existing objects.",
 };
 
 export const mainValueArticleContent = {
   name: "Main values of our company",
-  desc: "EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world's energy needs.",
+  desc: "EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world`s energy needs.",
 };
 
 export const teamData = [
@@ -96,7 +96,7 @@ export const faqList = [
   },
   {
     id: 2,
-    qw: "What sets EcoSolution's renewable energy solutions apart from others on the market?",
+    qw: "What sets EcoSolution`s renewable energy solutions apart from others on the market?",
     answ: "Wind turbines and solar panels generate electricity through different mechanisms. Wind turbines harness the kinetic energy of the wind to turn blades, which then drive a generator. Solar panels convert sunlight into electricity through the photovoltaic effect. When integrated into a renewable energy system, these technologies complement each other by providing a continuous and reliable power supply. Wind power is often more abundant during certain times, while solar power is consistent during daylight hours, resulting in a more stable overall energy output.",
   },
   {
@@ -113,5 +113,35 @@ export const faqList = [
     id: 5,
     qw: "How does EcoSolution engage with local communities and support a just transition to renewable energy?",
     answ: "Wind turbines and solar panels generate electricity through different mechanisms. Wind turbines harness the kinetic energy of the wind to turn blades, which then drive a generator. Solar panels convert sunlight into electricity through the photovoltaic effect. When integrated into a renewable energy system, these technologies complement each other by providing a continuous and reliable power supply. Wind power is often more abundant during certain times, while solar power is consistent during daylight hours, resulting in a more stable overall energy output.",
+  },
+];
+
+export const casesList = [
+  {
+    id: 1,
+    title: "Openness",
+    description: "to the world, people, new ideas and projects",
+    icon: Openness,
+  },
+  {
+    id: 2,
+    title: "Responsibility",
+    description:
+      "we are aware that the results of our work have an impact on our lives and the lives of future generations",
+    icon: Responcibility,
+  },
+  {
+    id: 3,
+    title: "Innovation",
+    description:
+      "we use the latest technology to implement non-standard solutions",
+    icon: Innovation,
+  },
+  {
+    id: 4,
+    title: "Quality",
+    description:
+      "we do not strive to be the first among others, but we want to be the best in our business",
+    icon: Quality,
   },
 ];

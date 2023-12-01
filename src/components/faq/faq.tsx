@@ -4,8 +4,6 @@ import { faqList } from "@/constants";
 import classes from "./faq.module.css";
 
 const Faq = () => {
-  const titleFirst = false;
-
   const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleAccordion = (index: number) => {
@@ -16,7 +14,6 @@ const Faq = () => {
     <section className="containerGlobal">
       <article className={classes.container}>
         <h2 className={classes.title}>Frequently Asked Questions</h2>
-        <div className={classes.line}></div>
         <div className={classes.description}>
           {faqList.map((item, index) => (
             <FaqCard
@@ -27,6 +24,14 @@ const Faq = () => {
               toggleAccordion={() => toggleAccordion(index)}
             />
           ))}
+        </div>
+        <div className={classes.line}></div>
+
+        <div className={classes.text}>
+          Didn`t find the answer to your question?
+        </div>
+        <div className={classes.button}>
+          <button>Contact Us</button>
         </div>
       </article>
     </section>
