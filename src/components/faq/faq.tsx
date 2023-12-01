@@ -15,15 +15,9 @@ const Faq = () => {
   return (
     <section className="containerGlobal">
       <article className={classes.container}>
-        <h2 className={titleFirst ? classes.titleFirst : classes.titleSecond}>
-          Frequently Asked Questions
-        </h2>
+        <h2 className={classes.title}>Frequently Asked Questions</h2>
         <div className={classes.line}></div>
-        <div
-          className={
-            titleFirst ? classes.descriptionFirst : classes.descriptionSecond
-          }
-        >
+        <div className={classes.description}>
           {faqList.map((item, index) => (
             <FaqCard
               key={item.id}

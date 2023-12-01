@@ -3,10 +3,10 @@ import classes from "./productionCounter.module.css";
 const ProductionCounter = () => (
   <section className="containerGlobal">
     <div className={classes.gridContainer}>
-      <div className={classes.title}>
+      <h2 className={classes.title}>
         Electricity we produced <br />
         for all time
-      </div>
+      </h2>
       <div className={classes.separator}></div>
       <div className={classes.counter}>
         <div className={classes.counterGrid}>

@@ -1,26 +1,3 @@
-/* .gridContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "title line description";
-  justify-content: center;
-  align-content: center;
-  padding-top: 36px;
-}
-
-.title {
-  grid-column: 1 / span 2;
-  text-align: center;
-  font-size: 28px;
-}
-
-.counter {
-  grid-column: 1 / span 2;
-}
-
-
-
-*/
-
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 1px 1fr;

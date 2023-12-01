@@ -3,16 +3,14 @@
   padding-top: 36px;
 }
 
-.titleFirst,
-.titleSecond {
+.title {
   font-size: 28px;
   padding-bottom: 24px;
   padding-right: 0;
   text-transform: uppercase;
 }
 
-.descriptionSecond,
-.descriptionFirst {
+.description {
   text-align: justify;
 }
 
@@ -29,42 +27,16 @@
     width: 1px;
   }
 
-  .titleFirst {
-    grid-area: title;
-  }
-
-  .descriptionFirst {
+  .title {
     grid-area: description;
-  }
-
-  .titleSecond {
-    grid-area: description;
-  }
-
-  .descriptionSecond {
-    grid-area: title;
-  }
-
-  .titleFirst,
-  .titleSecond {
     font-size: 36px;
     padding-bottom: 0px;
-  }
-
-  .titleSecond {
     padding-left: 10px;
   }
 
-  .titleFirst {
-    padding-right: 130px;
-  }
-
-  .descriptionSecond {
+  .description {
+    grid-area: title;
     padding-right: 65px;
-  }
-
-  .descriptionFirst {
-    padding-left: 10px;
   }
 }
 
@@ -73,19 +45,11 @@
     padding-top: 124px;
   }
 
-  .titleSecond {
+  .title {
     padding-left: 130px;
   }
 
-  .titleFirst {
-    padding-right: 300px;
-  }
-
-  .descriptionSecond {
+  .description {
     padding-right: 160px;
-  }
-
-  .descriptionFirst {
-    padding-left: 160px;
   }
 }

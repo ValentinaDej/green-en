@@ -32,40 +32,26 @@
 
   .titleFirst {
     grid-area: title;
-  }
-
-  .descriptionFirst {
-    grid-area: description;
+    font-size: 36px;
+    padding-bottom: 0px;
+    padding-right: 130px;
   }
 
   .titleSecond {
     grid-area: description;
+    font-size: 36px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+  }
+
+  .descriptionFirst {
+    grid-area: description;
+    padding-left: 10px;
   }
 
   .descriptionSecond {
     grid-area: title;
-  }
-
-  .titleFirst,
-  .titleSecond {
-    font-size: 36px;
-    padding-bottom: 0px;
-  }
-
-  .titleSecond {
-    padding-left: 10px;
-  }
-
-  .titleFirst {
-    padding-right: 130px;
-  }
-
-  .descriptionSecond {
     padding-right: 65px;
-  }
-
-  .descriptionFirst {
-    padding-left: 10px;
   }
 }
 
