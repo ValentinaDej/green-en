@@ -1,0 +1,91 @@
+.container {
+  display: block;
+  padding-top: 36px;
+}
+
+.titleFirst,
+.titleSecond {
+  font-size: 28px;
+  padding-bottom: 24px;
+  padding-right: 0;
+  text-transform: uppercase;
+}
+
+.descriptionSecond,
+.descriptionFirst {
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-areas: "title line description";
+    padding-top: 100px;
+  }
+
+  .line {
+    grid-area: line;
+    width: 1px;
+  }
+
+  .titleFirst {
+    grid-area: title;
+  }
+
+  .descriptionFirst {
+    grid-area: description;
+  }
+
+  .titleSecond {
+    grid-area: description;
+  }
+
+  .descriptionSecond {
+    grid-area: title;
+  }
+
+  .titleFirst,
+  .titleSecond {
+    font-size: 36px;
+    padding-bottom: 0px;
+  }
+
+  .titleSecond {
+    padding-left: 10px;
+  }
+
+  .titleFirst {
+    padding-right: 130px;
+  }
+
+  .descriptionSecond {
+    padding-right: 65px;
+  }
+
+  .descriptionFirst {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-top: 124px;
+  }
+
+  .titleSecond {
+    padding-left: 130px;
+  }
+
+  .titleFirst {
+    padding-right: 300px;
+  }
+
+  .descriptionSecond {
+    padding-right: 160px;
+  }
+
+  .descriptionFirst {
+    padding-left: 160px;
+  }
+}

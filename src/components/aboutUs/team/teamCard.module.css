@@ -1,0 +1,18 @@
+.card {
+  text-align: left;
+}
+
+.name {
+  padding-top: 8px;
+  font-size: 18px;
+}
+
+.position {
+  color: var(--color-text-add);
+}
+
+@media (min-width: 768px) {
+  .name {
+    font-size: 20px;
+  }
+}

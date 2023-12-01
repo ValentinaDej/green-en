@@ -1,0 +1,122 @@
+.container {
+  max-width: 460px;
+  padding-top: 146px;
+  border: 1px solid red;
+}
+
+.title {
+  font-size: 36px;
+  padding-bottom: 24px;
+}
+
+.justifyText {
+  text-align: justify;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.learnmore {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: var(--color-primary-600);
+  color: var(--color-menu-text-100);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.horizontalLine {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 1px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background-color: var(--color-primary-600);
+}
+
+.elHidden {
+  display: none;
+}
+
+.baner {
+  padding-top: 36px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-top: 164px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    column-gap: 65px;
+  }
+
+  .titleContainer {
+    grid-column: 1 / 2; /* Occupies the first column */
+    grid-row: 1 / 3; /* Spans two rows */
+    padding-bottom: 0;
+  }
+
+  .title {
+    font-size: 48px;
+    padding-bottom: 0;
+  }
+
+  .descriptionContainer {
+    grid-column: 2 / 3; /* Occupies the second column */
+    grid-row: 1 / 2; /* Occupies the first row */
+    align-self: start;
+    justify-self: start;
+    padding-bottom: 0px;
+  }
+
+  .horizontalLine {
+    margin-bottom: 20px;
+  }
+
+  .contactContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  .elHidden {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 200px;
+    column-gap: 206px;
+    max-width: 1280px;
+    grid-template-areas:
+      "column1 descriptionContainer"
+      "column1 row2"
+      "column1 horizontalLine"
+      "column1 row4"
+      "column1 contactContainer"
+      "column1 fullWidthImage";
+  }
+
+  .title {
+    font-size: 64px;
+  }
+
+  .horizontalLine {
+    margin-bottom: 16px;
+  }
+
+  .descriptionContainer {
+    grid-area: descriptionContainer;
+    max-width: 360px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+}

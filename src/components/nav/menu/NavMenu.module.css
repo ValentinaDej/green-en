@@ -1,0 +1,87 @@
+.menu {
+  background-color: var(--color-accent-75);
+  border-radius: 25px;
+  padding: 24px;
+}
+
+.menuContent {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-content: left;
+  height: calc(100vh - 134px);
+}
+
+.socialLink {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 10px;
+  align-content: center;
+}
+
+.menuItem:not(:last-child) {
+  padding-bottom: 8px;
+}
+
+.menuItem:hover .menuItemText,
+.menuItem:focus .menuItemText {
+  color: var(--color-menu-text-100);
+}
+
+.menuItem:hover .menuItemIcon,
+.menuItem:focus .menuItemIcon {
+  stroke: var(--color-menu-text-100);
+}
+
+.menuItemText {
+  font-size: 24px;
+  padding-right: 8px;
+  color: var(--color-menu-text-25);
+}
+
+.menuClose {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  align-items: center;
+  gap: 0;
+  text-align: start;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--color-menu-text-100);
+  color: var(--color-menu-text-100);
+  cursor: pointer;
+}
+
+.menuClose:hover {
+  color: var(--color-menu-icon);
+}
+
+.menuClose:focus {
+  color: var(--color-menu-icon-focus);
+}
+
+.menuClose:hover .menuCommonIcon {
+  stroke: var(--color-menu-icon);
+}
+
+.menuClose:focus .menuCommonIcon {
+  stroke: var(--color-menu-icon-focus);
+}
+
+.menuCommonIcon {
+  cursor: pointer;
+  stroke: var(--color-menu-text-100);
+}
+
+.menuCommonIcon:hover {
+  stroke: var(--color-menu-icon);
+}
+
+.menuItemIcon {
+  stroke: var(--color-menu-icon);
+}
+
+@media (min-width: 1280px) {
+  .menuContent {
+    height: calc(100vh - 122px);
+  }
+}

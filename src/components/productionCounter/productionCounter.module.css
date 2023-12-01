@@ -1,0 +1,115 @@
+/* .gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title line description";
+  justify-content: center;
+  align-content: center;
+  padding-top: 36px;
+}
+
+.title {
+  grid-column: 1 / span 2;
+  text-align: center;
+  font-size: 28px;
+}
+
+.counter {
+  grid-column: 1 / span 2;
+}
+
+
+
+*/
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  grid-template-rows: auto 48px auto 48px;
+  padding-top: 36px;
+}
+
+.title {
+  grid-column: 1 / -1;
+  padding: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.separator {
+  grid-column: 2;
+  grid-row: 2;
+  grid-row: 2;
+  background: var(--color-primary-600);
+  width: 1px;
+  height: 48px;
+}
+
+.separator:nth-of-type(2) {
+  grid-row: 4;
+}
+
+.counter {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.counterGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Oswald";
+  line-height: 1;
+}
+
+.counterNumber {
+  color: var(--color-primary-600);
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.counterUnit {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .gridContainer {
+    padding-top: 100px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .counterNumber {
+    font-size: 100px;
+  }
+
+  .counterUnit {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .gridContainer {
+    grid-template-rows: auto 87px auto 87px;
+    padding-top: 122px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .separator {
+    height: 87px;
+  }
+
+  .counterNumber {
+    font-size: 164px;
+  }
+
+  .counterUnit {
+    font-size: 48px;
+  }
+}
