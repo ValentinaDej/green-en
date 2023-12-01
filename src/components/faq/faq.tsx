@@ -1,9 +1,17 @@
+import React, { useState } from "react";
 import FaqCard from "./faqCard";
 import { faqList } from "@/constants";
 import classes from "./faq.module.css";
 
 const Faq = () => {
   const titleFirst = false;
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const toggleAccordion = (index: number) => {
+    setActiveIndex(activeIndex === index ? -1 : index);
+  };
+
   return (
     <section className="containerGlobal">
       <article className={classes.container}>
@@ -16,10 +24,15 @@ const Faq = () => {
             titleFirst ? classes.descriptionFirst : classes.descriptionSecond
           }
         >
-          {faqList.map((item) => (
-            <FaqCard key={item.id} qw={item.qw} answ={item.answ} />
+          {faqList.map((item, index) => (
+            <FaqCard
+              key={item.id}
+              qw={item.qw}
+              answ={item.answ}
+              isOpen={activeIndex === index}
+              toggleAccordion={() => toggleAccordion(index)}
+            />
           ))}
-          desc
         </div>
       </article>
     </section>

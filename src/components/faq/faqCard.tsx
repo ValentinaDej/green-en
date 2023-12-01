@@ -4,19 +4,17 @@ import classes from "./faqCard.module.css";
 type Props = {
   qw: string;
   answ: string;
+  isOpen: boolean;
+  toggleAccordion: () => void;
 };
 
-const FaqCard = ({ qw, answ }: Props) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-  };
-
+const FaqCard = ({ qw, answ, isOpen, toggleAccordion }: Props) => {
   return (
     <div className={classes.card}>
-      <div className={classes.name}>{qw}</div>
-      <div className={classes.position}>{answ}</div>
+      <button className={classes.name} onClick={toggleAccordion}>
+        {qw}
+      </button>
+      {isOpen && <div className={classes.position}>{answ}</div>}
     </div>
   );
 };
