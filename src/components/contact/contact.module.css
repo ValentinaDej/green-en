@@ -7,6 +7,11 @@
   padding-top: 36px;
 }
 
+.form {
+  width: 100%;
+  background-color: var(--color-background-main);
+}
+
 .title {
   text-align: center;
 }
@@ -21,7 +26,7 @@
     grid-template-columns: 1fr 1px 1fr;
     grid-template-rows: auto;
     grid-template-areas: "contact line form";
-    gap: 12px;
+    gap: 0px;
     padding-top: 40px;
   }
 
