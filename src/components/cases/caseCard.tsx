@@ -28,12 +28,18 @@ const CaseCard = ({
           priority
         />
       </div>
-      <div className={classes.name}>{name}</div>
-      <div className={classes.address}>{address}</div>
-      <button className={classes.button}>Button</button>
-      <div className={classes.line}></div>
-      <div className={classes.description}>{description}</div>
-      <div className={classes.date}>{date}</div>
+
+      <div className={classes.infoWrapper}>
+        <div className={classes.name}>
+          {name}
+          <br />
+          {address}
+        </div>
+        <button className={classes.button}>Button</button>
+        <div className={classes.line}></div>
+        <div className={classes.description}>{description}</div>
+        <div className={classes.date}>{date}</div>
+      </div>
     </div>
   );
 };
