@@ -6,10 +6,15 @@ import Quality from "@/shared/icons/Quality";
 import Innovation from "@/shared/icons/Innovation";
 import Responcibility from "@/shared/icons/Responcibility";
 
-import { dudaRhoto } from "@/assets/images";
-import { shevchenkoPhoto } from "@/assets/images";
-import { turchenkoPhoto } from "@/assets/images";
-import { dunaevPhoto } from "@/assets/images";
+import {
+  dudaRhoto,
+  shevchenkoPhoto,
+  turchenkoPhoto,
+  dunaevPhoto,
+  lutsk,
+} from "@/assets/images";
+
+import { buh, kyiv, rivne, zhytomyr } from "@/assets/images";
 
 export const navLinks = [
   { href: "#main", label: "Main", icon: ArrowRight },
@@ -119,29 +124,42 @@ export const faqList = [
 export const casesList = [
   {
     id: 1,
-    title: "Openness",
-    description: "to the world, people, new ideas and projects",
-    icon: Openness,
+    name: "Lviv Region, Radekhiv town ",
+    address: "Private Enterprise “ZAKHIDNYI BUH”",
+    description: "Wind Power for auto field irrigation",
+    date: "July 2023",
+    photo: buh,
   },
   {
     id: 2,
-    title: "Responsibility",
-    description:
-      "we are aware that the results of our work have an impact on our lives and the lives of future generations",
-    icon: Responcibility,
+    name: "Private Enterprise “Bosch”",
+    address: "Zhytomyr city",
+    description: "Solar Panels for industrial use",
+    date: "July 2023",
+    photo: zhytomyr,
   },
   {
     id: 3,
-    title: "Innovation",
-    description:
-      "we use the latest technology to implement non-standard solutions",
-    icon: Innovation,
+    name: "Dunn, Marshall and Holden",
+    address: "8312 Moore Hollow, Jessicaville, KS 09684",
+    description: "Re-contextualized dedicated website",
+    date: "October 2023",
+    photo: rivne,
   },
   {
     id: 4,
-    title: "Quality",
-    description:
-      "we do not strive to be the first among others, but we want to be the best in our business",
-    icon: Quality,
+    name: "Wallace Group",
+    address: "2783 Melissa Mills, Lake Justinland, NV 66919",
+    description: "Robust neutral workforce",
+    date: "September 2023",
+    photo: lutsk,
+  },
+  {
+    id: 5,
+    name: "Johnson, Ward and Norman",
+    address: "7561 Boyer Pass, Sullivanview, HI 09109",
+    description: "Open-architected empowering challenge",
+    date: "July 2023",
+    photo: kyiv,
   },
 ];

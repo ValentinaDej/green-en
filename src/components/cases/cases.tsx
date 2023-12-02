@@ -2,38 +2,26 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./cases.module.css"; // Імпорт модульних стилів
-
-const data = [
-  { id: 1, text: "AAA" },
-  { id: 2, text: "BBB" },
-  { id: 3, text: "CCC" },
-  { id: 4, text: "DDD" },
-  { id: 5, text: "EEE" },
-  { id: 6, text: "FFF" },
-  { id: 7, text: "GGG" },
-  { id: 8, text: "KKK" },
-  { id: 9, text: "LLL" },
-  { id: 10, text: "MMM" },
-  { id: 11, text: "NNN" },
-];
+import CaseCard from "./caseCard";
+import { casesList } from "@/constants";
 
 const TrendingSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const slideLeft = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? data.length - 1 : prevIndex - 1
+      prevIndex === 0 ? casesList.length - 1 : prevIndex - 1
     );
   };
 
   const slideRight = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === data.length - 1 ? 0 : prevIndex + 1
+      prevIndex === casesList.length - 1 ? 0 : prevIndex + 1
     );
   };
 
-  const activeSlide = data[currentIndex];
-  const nextSlide = data[(currentIndex + 1) % data.length];
+  const activeSlide = casesList[currentIndex];
+  const nextSlide = casesList[(currentIndex + 1) % casesList.length];
 
   return (
     <section className="containerGlobal">
@@ -43,7 +31,7 @@ const TrendingSlider = () => {
         <div className={classes.counter}>
           <span>{`${String(currentIndex + 1).padStart(2, "0")}`}</span>
           <span className={classes.counterCommon}>{` / ${String(
-            data.length
+            casesList.length
           ).padStart(2, "0")}`}</span>
         </div>
         <div className={classes.buttons}>
@@ -55,11 +43,23 @@ const TrendingSlider = () => {
           </button>
         </div>
         <div className={classes.imageContainer}>
-          <div>{activeSlide.text}</div>
+          <CaseCard
+            name={activeSlide.name}
+            address={activeSlide.address}
+            description={activeSlide.description}
+            date={activeSlide.date}
+            photo={activeSlide.photo}
+          />
         </div>
         <div className={classes.dividerTransp}></div>
         <div className={classes.secondImageContainer}>
-          <div>{nextSlide.text}</div>
+          <CaseCard
+            name={nextSlide.name}
+            address={nextSlide.address}
+            description={nextSlide.description}
+            date={nextSlide.date}
+            photo={nextSlide.photo}
+          />
         </div>
       </div>
     </section>
