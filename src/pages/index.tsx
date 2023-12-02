@@ -8,6 +8,7 @@ import {
   Cases,
   Faq,
   Contact,
+  Footer,
 } from "@/components";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
         <Cases />
         <Faq />
         <Contact />
+        <Footer />
       </main>
     </>
   );

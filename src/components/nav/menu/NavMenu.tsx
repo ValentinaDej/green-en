@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { navLinks, socialLinks } from "@/constants/index";
 
+import SocialLinks from "@/shared/components/socialLinks/socialLinks";
 import Close from "@/shared/icons/Close";
 import classes from "./NavMenu.module.css";
 
@@ -29,19 +30,10 @@ const NavMenu = ({ toggleMenu }: Props) => {
             </li>
           ))}
         </ul>
-
-        <ul className={classes.socialLink}>
-          {socialLinks.map((item) => (
-            <li key={item.id} className={classes.menuItem}>
-              <Link href={item.href}>
-                <span>
-                  <item.icon className={classes.menuCommonIcon} />
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className={classes.socialLink}></div>
       </div>
+
+      <SocialLinks socialLinks={socialLinks} mode="lightMode" />
     </div>
   );
 };

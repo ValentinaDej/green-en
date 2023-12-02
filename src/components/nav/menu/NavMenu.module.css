@@ -11,13 +11,6 @@
   height: calc(100vh - 134px);
 }
 
-.socialLink {
-  display: grid;
-  grid-template-columns: min-content min-content;
-  gap: 10px;
-  align-content: center;
-}
-
 .menuItem:not(:last-child) {
   padding-bottom: 8px;
 }

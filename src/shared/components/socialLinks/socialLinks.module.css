@@ -1,0 +1,26 @@
+.group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.item {
+  cursor: pointer;
+  transition: stroke 0.3s ease;
+}
+
+.darkMode {
+  stroke: var(--color-text-main);
+}
+
+.darkMode:hover {
+  stroke: var(--color-menu-icon);
+}
+
+.lightMode {
+  stroke: var(--color-menu-text-100);
+}
+
+.lightMode:hover {
+  stroke: var(--color-menu-icon);
+}

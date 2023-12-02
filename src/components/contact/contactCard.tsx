@@ -1,8 +1,7 @@
-import Link from "next/link";
-
 import Phone from "@/shared/icons/Phone";
 import Email from "@/shared/icons/Email";
 import Address from "@/shared/icons/Address";
+import SocialLinks from "@/shared/components/socialLinks/socialLinks";
 import { socialLinks } from "@/constants";
 import classes from "./contactCard.module.css";
 
@@ -41,13 +40,7 @@ const ContactCard = () => {
 
       <div className={classes.contactGroup}>
         <div className={classes.title}>Social Networks:</div>
-        <div className={classes.iconGroup}>
-          {socialLinks.map((item) => (
-            <Link href={item.href}>
-              <item.icon className={classes.menuCommonIcon} />
-            </Link>
-          ))}
-        </div>
+        <SocialLinks mode="darkMode" socialLinks={socialLinks} />
       </div>
     </div>
   );

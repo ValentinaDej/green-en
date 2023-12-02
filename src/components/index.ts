@@ -6,6 +6,7 @@ import ProductionCounter from "./productionCounter/productionCounter";
 import Cases from "./cases/cases";
 import Faq from "./faq/faq";
 import Contact from "./contact/contact";
+import Footer from "./footer/footer";
 
 export {
   Nav,
@@ -16,4 +17,5 @@ export {
   Cases,
   Faq,
   Contact,
+  Footer,
 };
