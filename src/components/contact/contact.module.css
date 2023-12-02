@@ -1,0 +1,43 @@
+.container {
+  display: block;
+  padding-top: 36px;
+}
+
+.gridContainer {
+  padding-top: 36px;
+}
+
+.title {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-top: 100px;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "contact line form";
+    gap: 12px;
+    padding-top: 40px;
+  }
+
+  .line {
+    grid-area: line;
+    width: 1px;
+    align-self: stretch;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-top: 124px;
+  }
+
+  .gridContainer {
+    padding-top: 100px;
+  }
+}

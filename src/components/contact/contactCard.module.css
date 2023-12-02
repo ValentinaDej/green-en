@@ -1,0 +1,50 @@
+.contactGroup {
+  margin-bottom: 24px;
+}
+
+.title {
+  margin-bottom: 8px;
+}
+
+.dataGroup {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.dataText {
+  margin-left: 0;
+  font-size: 20px;
+}
+
+.iconGroup {
+  display: inline-block;
+}
+
+.menuCommonIcon {
+  cursor: pointer;
+  stroke: var(--color-text-main);
+  margin-right: 32px;
+}
+
+.menuCommonIcon:hover {
+  stroke: var(--color-menu-icon);
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1280px) {
+  .contactGroup {
+    margin-bottom: 32px;
+  }
+
+  .title {
+    margin-bottom: 16px;
+  }
+
+  .dataText {
+    font-size: 24px;
+  }
+}

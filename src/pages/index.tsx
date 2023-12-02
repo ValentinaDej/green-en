@@ -7,6 +7,7 @@ import {
   ProductionCounter,
   Cases,
   Faq,
+  Contact,
 } from "@/components";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
         <ProductionCounter />
         <Cases />
         <Faq />
+        <Contact />
       </main>
     </>
   );

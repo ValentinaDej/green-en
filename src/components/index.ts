@@ -5,5 +5,15 @@ import CompanyValues from "./companyValues/companyValues";
 import ProductionCounter from "./productionCounter/productionCounter";
 import Cases from "./cases/cases";
 import Faq from "./faq/faq";
+import Contact from "./contact/contact";
 
-export { Nav, Hero, AboutUs, CompanyValues, ProductionCounter, Cases, Faq };
+export {
+  Nav,
+  Hero,
+  AboutUs,
+  CompanyValues,
+  ProductionCounter,
+  Cases,
+  Faq,
+  Contact,
+};
