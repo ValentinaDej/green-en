@@ -5,7 +5,8 @@ import { useState, useEffect } from "react";
 import NavMenu from "./menu/NavMenu";
 import { masterData } from "@/constants";
 import { hamburger } from "@/assets/icons";
-
+import Button from "@/shared/components/button/button";
+import Menu from "@/shared/icons/Menu";
 import classes from "./Nav.module.css";
 
 const Nav = () => {
@@ -39,7 +40,7 @@ const Nav = () => {
         </div>
 
         <div className={classes.nav}>
-          <Link href="/">
+          {/* <Link href="/">
             <Image
               src={hamburger}
               alt="menu icon"
@@ -49,7 +50,10 @@ const Nav = () => {
               onClick={toggleMenu}
               role="button"
             />
-          </Link>
+          </Link> */}
+          <Button variant="round" color="red">
+            <Menu />
+          </Button>
 
           <div className={classes.navHidden}>
             <div>

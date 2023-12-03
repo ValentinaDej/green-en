@@ -1,0 +1,17 @@
+.button {
+  border: none;
+  cursor: pointer;
+  /* Базові стилі для всіх кнопок */
+}
+
+.round {
+  border-radius: 50%;
+  padding: 1em;
+  /* Стилі для круглих кнопок */
+}
+
+.oval {
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  /* Стилі для овальних кнопок */
+}
