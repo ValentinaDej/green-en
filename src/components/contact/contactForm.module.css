@@ -1,11 +1,8 @@
-.contactContainer {
-  height: 100%;
-  padding: 36px 12px;
-}
-
 .form {
   display: grid;
   grid-gap: 28px;
+  height: 100%;
+  padding: 36px 12px;
 }
 
 .formGroup {
@@ -68,13 +65,13 @@
 }
 
 @media (min-width: 768px) {
-  .contactContainer {
+  .form {
     padding: 36px 24px;
   }
 }
 
 @media (min-width: 1280px) {
-  .contactContainer {
+  .form {
     padding: 48px;
   }
 

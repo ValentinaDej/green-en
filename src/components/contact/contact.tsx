@@ -5,20 +5,18 @@ import classes from "./contact.module.css";
 
 const Contact = () => {
   return (
-    <section className="containerGlobal">
-      <div className={classes.container}>
-        <h2 className={classes.title}>CONTACT US</h2>
-        <div className={classes.gridContainer}>
-          <div className={classes.contact}>
-            <ContactCard />
-          </div>
-          <div className={classes.line}></div>
-          <div className={classes.form}>
-            <ContactForm />
-          </div>
-        </div>
+    <article className={`containerGlobal ${classes.container}`}>
+      <h2 className={classes.title}>CONTACT US</h2>
+      <div className={classes.gridContainer}>
+        <section className={classes.contact}>
+          <ContactCard />
+        </section>
+        <span className={classes.line}></span>
+        <section className={classes.form}>
+          <ContactForm />
+        </section>
       </div>
-    </section>
+    </article>
   );
 };
 

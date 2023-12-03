@@ -6,15 +6,24 @@ import Quality from "@/shared/icons/Quality";
 import Innovation from "@/shared/icons/Innovation";
 import Responcibility from "@/shared/icons/Responcibility";
 
+import { logo } from "@/assets/images";
+
 import {
   dudaRhoto,
   shevchenkoPhoto,
   turchenkoPhoto,
   dunaevPhoto,
-  lutsk,
 } from "@/assets/images";
 
-import { buh, kyiv, rivne, zhytomyr } from "@/assets/images";
+import { buh, kyiv, rivne, zhytomyr, lutsk } from "@/assets/images";
+
+export const masterData = {
+  finalCountElecteycity: 1134147814,
+  logo: logo,
+  address: "79005, Ukraine, Lvivstreet. Shota Rustaveli, 7",
+  email: "office@ecosolution.com",
+  copySign: "ecosolution © 2023",
+};
 
 export const navLinks = [
   { href: "#main", label: "Main", icon: ArrowRight },

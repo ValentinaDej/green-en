@@ -1,8 +1,18 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 1px 1fr;
-  grid-template-rows: auto 48px auto 48px;
+  grid-template-rows: auto 48px auto;
   padding-top: 36px;
+  text-transform: uppercase;
 }
 
 .title {
@@ -12,37 +22,16 @@
   text-align: center;
 }
 
-/* .separator {
-  grid-column: 2;
-  grid-row: 2;
-  background: var(--color-primary-600);
-  width: 1px;
-  height: 48px;
-}
-
-.separator:nth-of-type(2) {
-  grid-row: 4;
-} */
-
 .separator {
   grid-column: 2;
   background: var(--color-primary-600);
   width: 1px;
 }
 
-.separator:first-of-type {
-  grid-row: 2;
-  height: 48px;
-}
-
-.separator:last-of-type {
-  grid-row: 4;
-  height: 48px;
-}
-
 .counter {
   grid-column: 1 / -1;
   text-align: center;
+  margin-top: 24px;
 }
 
 .counterGrid {
@@ -59,6 +48,7 @@
   color: var(--color-primary-600);
   font-size: 48px;
   font-weight: 600;
+  animation: fadeIn 0.5s ease-out;
 }
 
 .counterUnit {
@@ -67,6 +57,7 @@
 
 @media (min-width: 768px) {
   .gridContainer {
+    grid-template-rows: auto 87px auto;
     padding-top: 100px;
   }
 
@@ -81,24 +72,19 @@
   .counterUnit {
     font-size: 28px;
   }
+
+  .separator:first-of-type {
+    height: 87px;
+  }
 }
 
 @media (min-width: 1280px) {
   .gridContainer {
-    grid-template-rows: auto 87px auto 87px;
     padding-top: 122px;
   }
 
   .title {
     font-size: 48px;
-  }
-
-  .separator:first-of-type {
-    height: 87px;
-  }
-
-  .separator:last-of-type {
-    height: 87px;
   }
 
   .counterNumber {
@@ -107,5 +93,9 @@
 
   .counterUnit {
     font-size: 48px;
+  }
+
+  .counter {
+    margin-top: 17px;
   }
 }

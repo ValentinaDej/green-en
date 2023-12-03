@@ -1,0 +1,90 @@
+.container {
+  display: block;
+  max-width: 460px;
+  padding-top: 36px;
+  border: 1px solid blue;
+}
+
+.titleFirst,
+.titleSecond {
+  font-size: 28px;
+  padding-bottom: 24px;
+  padding-right: 0;
+  text-transform: uppercase;
+}
+
+.descriptionSecond,
+.descriptionFirst {
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "title line description"
+      "children children children";
+    padding-top: 100px;
+    max-width: 768px;
+  }
+
+  .line {
+    grid-area: line;
+    background-color: var(--color-primary-600);
+    width: 1px;
+  }
+
+  .titleFirst {
+    grid-area: title;
+    font-size: 36px;
+    padding-bottom: 0px;
+    padding-right: 130px;
+  }
+
+  .titleSecond {
+    grid-area: description;
+    font-size: 36px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+  }
+
+  .descriptionFirst {
+    grid-area: description;
+    padding-left: 10px;
+  }
+
+  .descriptionSecond {
+    grid-area: title;
+    padding-right: 65px;
+  }
+
+  .children {
+    grid-area: children;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-top: 124px;
+    max-width: 1280px;
+  }
+
+  .titleSecond {
+    padding-left: 130px;
+  }
+
+  .titleFirst {
+    padding-right: 300px;
+  }
+
+  .descriptionSecond {
+    padding-right: 160px;
+  }
+
+  .descriptionFirst {
+    padding-left: 160px;
+  }
+}

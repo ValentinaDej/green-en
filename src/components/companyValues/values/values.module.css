@@ -11,7 +11,7 @@
 
 .textContainer {
   background-color: var(--color-background-main);
-  padding: 18px 12px;
+  padding: 12px 12px;
   text-align: justify;
 }
 
@@ -57,6 +57,11 @@
   }
 
   .textContainer {
-    padding: 60px 24px;
+    padding: 48px 24px;
+  }
+
+  .photo {
+    width: 596px;
+    height: 339px;
   }
 }

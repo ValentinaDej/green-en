@@ -1,19 +1,30 @@
 .footerContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(6, auto);
   gap: 16px;
   align-items: center;
+  padding-top: 36px;
+}
+
+.footerDivider {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-primary-600);
+  margin-bottom: 8px;
 }
 
 .footerLogo {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
+  margin-left: 0;
 }
 
 .footerButton {
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 2;
   margin-right: 0;
 }
 
@@ -35,41 +46,52 @@
 @media (min-width: 768px) {
   .footerContainer {
     grid-template-columns: 1fr 1fr auto;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    padding-top: 100px;
   }
 
   .footerLogo {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
   }
 
   .footerSocials {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 2;
     margin-left: 0;
   }
 
   .footerButton {
     grid-column: 3;
-    grid-row: 1;
+    grid-row: 2;
   }
 
   .footerAddress {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
     text-align: start;
     margin-left: 0;
   }
 
   .footerEmail {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
     margin-left: 0;
   }
 
   .footerInfo {
     grid-column: 3;
-    grid-row: 2;
+    grid-row: 3;
     margin-right: 0;
+  }
+
+  .footerDivider {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footerContainer {
+    padding-top: 120px;
   }
 }

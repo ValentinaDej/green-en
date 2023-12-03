@@ -1,4 +1,4 @@
-import headerLogo from "./header-logo.svg";
+import logo from "./header-logo.svg";
 
 import banerImage from "./wind-turbine-clean-energy.png";
 
@@ -17,7 +17,7 @@ import rivne from "./cases/rivne.png";
 import zhytomyr from "./cases/zhytomyr.png";
 
 export {
-  headerLogo,
+  logo,
   banerImage,
   dudaRhoto,
   dunaevPhoto,

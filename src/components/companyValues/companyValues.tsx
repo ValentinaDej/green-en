@@ -1,15 +1,14 @@
 import { mainValueArticleContent } from "@/constants/index";
 
-import Article from "../../shared/components/article/article";
+import Article from "@/shared/components/article/article";
 import Values from "./values/values";
 
 const CompanyValues = () => {
   const { name: nameVal, desc: descVal } = mainValueArticleContent;
   return (
-    <section className="containerGlobal">
-      <Article titleFirst={true} name={nameVal} desc={descVal} />
+    <Article titleFirst={true} name={nameVal} desc={descVal}>
       <Values />
-    </section>
+    </Article>
   );
 };
 

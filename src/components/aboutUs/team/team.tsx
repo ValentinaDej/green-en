@@ -1,5 +1,4 @@
 import TeamCard from "./teamCard";
-
 import { teamData } from "@/constants";
 import classes from "./team.module.css";
 

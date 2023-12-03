@@ -3,8 +3,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 import NavMenu from "./menu/NavMenu";
-
-import { headerLogo } from "@/assets/images";
+import { masterData } from "@/constants";
 import { hamburger } from "@/assets/icons";
 
 import classes from "./Nav.module.css";
@@ -29,10 +28,11 @@ const Nav = () => {
         <div className={classes.navLogo}>
           <Link href="/">
             <Image
-              src={headerLogo}
+              src={masterData.logo}
               alt="Heder Logo"
               width={269}
               height={40}
+              layout="responsive"
               priority
             />
           </Link>

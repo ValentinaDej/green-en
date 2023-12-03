@@ -2,6 +2,11 @@
   text-align: left;
 }
 
+.imageContainer {
+  width: 148px;
+  height: 168px;
+}
+
 .name {
   padding-top: 8px;
   font-size: 18px;
@@ -14,5 +19,17 @@
 @media (min-width: 768px) {
   .name {
     font-size: 20px;
+  }
+
+  .imageContainer {
+    width: 159px;
+    height: 168px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .imageContainer {
+    width: 274px;
+    height: 290px;
   }
 }

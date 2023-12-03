@@ -10,51 +10,29 @@ const Values = () => {
       <div className={classes.photo + " " + classes.topPhoto}>
         <Image
           src={emploee}
-          alt="wind, turbine clean energy"
+          alt="emploee"
           layout="responsive"
           width={596}
           height={339}
           priority
         />
       </div>
-      <div className={classes.textContainer}>
-        <ValueCard
-          id={valuesList[0].id}
-          icon={valuesList[0].icon}
-          title={valuesList[0].title}
-          description={valuesList[0].description}
-        />
-      </div>
-      <div className={classes.textContainer}>
-        <ValueCard
-          id={valuesList[1].id}
-          icon={valuesList[1].icon}
-          title={valuesList[1].title}
-          description={valuesList[1].description}
-        />
-      </div>
 
-      <div className={classes.textContainer}>
-        <ValueCard
-          id={valuesList[2].id}
-          icon={valuesList[2].icon}
-          title={valuesList[2].title}
-          description={valuesList[2].description}
-        />
-      </div>
-      <div className={classes.textContainer}>
-        <ValueCard
-          id={valuesList[3].id}
-          icon={valuesList[3].icon}
-          title={valuesList[3].title}
-          description={valuesList[3].description}
-        />
-      </div>
+      {valuesList.map(({ id, icon, title, description }) => (
+        <div key={id} className={classes.textContainer}>
+          <ValueCard
+            id={id}
+            icon={icon}
+            title={title}
+            description={description}
+          />
+        </div>
+      ))}
 
       <div className={classes.photo + " " + classes.bottomPhoto}>
         <Image
           src={solarPanels}
-          alt="wind, turbine clean energy"
+          alt="solar panels"
           layout="responsive"
           width={596}
           height={339}

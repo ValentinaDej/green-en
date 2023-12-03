@@ -7,7 +7,7 @@ import classes from "./contactCard.module.css";
 
 const ContactCard = () => {
   return (
-    <div className={classes.contactContainer}>
+    <>
       <div className={classes.contactGroup}>
         <div className={classes.title}>Phone:</div>
         <div className={classes.dataGroup}>
@@ -42,7 +42,7 @@ const ContactCard = () => {
         <div className={classes.title}>Social Networks:</div>
         <SocialLinks mode="darkMode" socialLinks={socialLinks} />
       </div>
-    </div>
+    </>
   );
 };
 

@@ -10,7 +10,16 @@ type Props = {
 const TeamCard = ({ name, position, photo }: Props) => {
   return (
     <div className={classes.card}>
-      <Image src={photo} alt={name} width={159} height={168} priority />
+      <div className={classes.imageContainer}>
+        <Image
+          src={photo}
+          alt={name}
+          width={148}
+          height={168}
+          layout="responsive"
+          priority
+        />
+      </div>
       <p className={classes.name}>{name}</p>
       <p className={classes.position}>{position}</p>
     </div>
