@@ -22,7 +22,7 @@ const Cases = () => {
   const nextSlide = casesList[(currentIndex + 1) % casesList.length];
 
   return (
-    <article className={`containerGlobal ${classes.container}`}>
+    <article id="cases" className={`containerGlobal ${classes.container}`}>
       <h2 className={classes.title}>SUCCESSFUL CASES OF OUR COMPANY</h2>
 
       <span className={classes.dividerColored}></span>

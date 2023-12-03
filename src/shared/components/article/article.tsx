@@ -1,14 +1,15 @@
 import classes from "./article.module.css";
 
 type ArticleProps = {
+  id: string;
   titleFirst: boolean;
   name: string;
   desc: string;
   children?: React.ReactNode;
 };
 
-const Article = ({ titleFirst, name, desc, children }: ArticleProps) => (
-  <article className={classes.container}>
+const Article = ({ id, titleFirst, name, desc, children }: ArticleProps) => (
+  <article id={id} className={classes.container}>
     <header>
       <h2 className={titleFirst ? classes.titleFirst : classes.titleSecond}>
         {name}

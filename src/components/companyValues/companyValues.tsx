@@ -6,7 +6,7 @@ import Values from "./values/values";
 const CompanyValues = () => {
   const { name: nameVal, desc: descVal } = mainValueArticleContent;
   return (
-    <Article titleFirst={true} name={nameVal} desc={descVal}>
+    <Article id="values" titleFirst={true} name={nameVal} desc={descVal}>
       <Values />
     </Article>
   );

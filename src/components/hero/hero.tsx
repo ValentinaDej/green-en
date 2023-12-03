@@ -5,7 +5,7 @@ import clasess from "./hero.module.css";
 
 const Hero = () => {
   return (
-    <article className={`containerGlobal ${clasess.containerGrid}`}>
+    <article id="main" className={`containerGlobal ${clasess.containerGrid}`}>
       <header className={clasess.containerTitle}>
         <h1 className={clasess.title}>RENEWABLE ENERGY FOR ANY TASK</h1>
       </header>
@@ -18,7 +18,7 @@ const Hero = () => {
       </section>
       <div className="grigRowCenterToBlockLeft">
         <div>
-          <a href="#" className={clasess.learnmore}>
+          <a href="#cases" className={clasess.learnmore}>
             Learn more →
           </a>
         </div>

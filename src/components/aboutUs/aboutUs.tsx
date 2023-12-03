@@ -5,7 +5,7 @@ import Team from "./team/team";
 const AboutUs = () => {
   const { name: nameIntro, desc: descIntro } = introductionArticleContent;
   return (
-    <Article titleFirst={false} name={nameIntro} desc={descIntro}>
+    <Article id="about" titleFirst={false} name={nameIntro} desc={descIntro}>
       <Team />
     </Article>
   );

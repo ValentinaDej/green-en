@@ -23,7 +23,9 @@ function Footer() {
         </Link>
       </div>
       <div className={classes.footerButton}>
-        <button className={classes.footerToTop}>↑</button>
+        <a href="#main" className={classes.footerToTop}>
+          ↑
+        </a>
       </div>
       <div className={classes.footerSocials}>
         <SocialLinks mode="darkMode" socialLinks={socialLinks} />

@@ -28,10 +28,9 @@ export const masterData = {
 export const navLinks = [
   { href: "#main", label: "Main", icon: ArrowRight },
   { href: "#about", label: "About", icon: ArrowRight },
-  { href: "#service", label: "Service", icon: ArrowRight },
-  { href: "#case", label: "Case", icon: ArrowRight },
+  { href: "#values", label: "Values", icon: ArrowRight },
+  { href: "#cases", label: "Case", icon: ArrowRight },
   { href: "#faq", label: "FAQ", icon: ArrowRight },
-  { href: "#customers", label: "Customers", icon: ArrowRight },
   { href: "#contact", label: "Contact", icon: ArrowRight },
 ];
 
