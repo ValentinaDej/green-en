@@ -22,6 +22,8 @@ export const masterData = {
   logo: logo,
   address: "79005, Ukraine, Lvivstreet. Shota Rustaveli, 7",
   email: "office@ecosolution.com",
+  phone1: "38 (098) 12 34 567",
+  phone2: "38 (093) 12 34 567",
   copySign: "ecosolution © 2023",
 };
 

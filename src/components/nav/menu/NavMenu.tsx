@@ -12,16 +12,9 @@ type Props = {
 const NavMenu = ({ toggleMenu }: Props) => {
   return (
     <div className={classes.menu}>
-      <div className={classes.menuClose}>
-        <Close
-          role="button"
-          onClick={toggleMenu}
-          className={classes.menuCommonIcon}
-          aria-label="Close"
-        />
-        <div role="button" onClick={toggleMenu}>
-          close
-        </div>
+      <div onClick={toggleMenu} className={classes.menuClose} role="button">
+        <Close className={classes.menuCommonIcon} aria-label="Close" />
+        <div>close</div>
       </div>
 
       <div className={classes.menuContent}>

@@ -10,6 +10,7 @@ const SocialLinks = ({ socialLinks, mode }: Props) => {
     <div className={classes.group}>
       {socialLinks.map((item: any) => (
         <a
+          key={item.id}
           target="_blank"
           href={item.href}
           rel="noopener noreferrer"

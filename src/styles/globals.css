@@ -111,6 +111,7 @@ font-size: 48px;
 
 .overlay{
   background-color: var(--color-accent-25);
+   overflow: hidden;
 }
 
 .grigRowCenterToBlockLeft {
