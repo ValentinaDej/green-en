@@ -4,12 +4,9 @@ import { navLinks, socialLinks } from "@/constants/index";
 import SocialLinks from "@/shared/components/socialLinks/socialLinks";
 import Close from "@/shared/icons/Close";
 import classes from "./NavMenu.module.css";
+import { navMenuProps } from "../../../../App.types";
 
-type Props = {
-  toggleMenu: () => void;
-};
-
-const NavMenu = ({ toggleMenu }: Props) => {
+const NavMenu = ({ toggleMenu }: navMenuProps) => {
   return (
     <div className={classes.menu}>
       <div onClick={toggleMenu} className={classes.menuClose} role="button">

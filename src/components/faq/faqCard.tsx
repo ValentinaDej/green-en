@@ -1,15 +1,9 @@
 import Plus from "@/shared/icons/Plus";
 import Minus from "@/shared/icons/Minus";
 import classes from "./faqCard.module.css";
+import { faqCardProps } from "../../../App.types";
 
-type Props = {
-  qw: string;
-  answ: string;
-  isOpen: boolean;
-  toggleAccordion: () => void;
-};
-
-const FaqCard = ({ qw, answ, isOpen, toggleAccordion }: Props) => {
+const FaqCard = ({ qw, answ, isOpen, toggleAccordion }: faqCardProps) => {
   return (
     <>
       <div className={classes.cardLine}></div>

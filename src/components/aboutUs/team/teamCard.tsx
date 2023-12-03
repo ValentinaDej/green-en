@@ -1,13 +1,8 @@
 import Image from "next/image";
 import classes from "./teamCard.module.css";
+import { TeamCardProps } from "../../../../App.types";
 
-type Props = {
-  name: string;
-  position: string;
-  photo: any;
-};
-
-const TeamCard = ({ name, position, photo }: Props) => {
+const TeamCard = ({ name, position, photo }: TeamCardProps) => {
   return (
     <div className={classes.card}>
       <div className={classes.imageContainer}>

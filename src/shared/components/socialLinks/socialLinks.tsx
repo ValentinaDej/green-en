@@ -1,11 +1,7 @@
-import Link from "next/link";
 import classes from "./socialLinks.module.css";
+import { socialLinksProps } from "../../../../App.types";
 
-type Props = {
-  socialLinks: any;
-  mode: string;
-};
-const SocialLinks = ({ socialLinks, mode }: Props) => {
+const SocialLinks = ({ socialLinks, mode }: socialLinksProps) => {
   return (
     <div className={classes.group}>
       {socialLinks.map((item: any) => (

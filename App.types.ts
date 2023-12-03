@@ -1,3 +1,7 @@
+export type navMenuProps = {
+  toggleMenu: () => void;
+};
+
 export type ValueCardProps = {
   id: number;
   icon: any;
@@ -8,4 +12,38 @@ export type ValueCardProps = {
 
 export type ValuesSectionProps = {
   values: ValueCardProps[];
+};
+
+export type TeamCardProps = {
+  name: string;
+  position: string;
+  photo: any;
+};
+
+export type CaseCardProps = {
+  photo: any;
+  name: string;
+  address: string;
+  description: string;
+  date: string;
+};
+
+export type faqCardProps = {
+  qw: string;
+  answ: string;
+  isOpen: boolean;
+  toggleAccordion: () => void;
+};
+
+export type ArticleProps = {
+  id: string;
+  titleFirst: boolean;
+  name: string;
+  desc: string;
+  children?: React.ReactNode;
+};
+
+export type socialLinksProps = {
+  socialLinks: any;
+  mode: string;
 };

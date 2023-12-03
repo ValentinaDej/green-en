@@ -1,13 +1,6 @@
 import Image from "next/image";
 import classes from "./caseCard.module.css";
-
-type CaseCardProps = {
-  photo: any;
-  name: string;
-  address: string;
-  description: string;
-  date: string;
-};
+import { CaseCardProps } from "../../../App.types";
 
 const CaseCard = ({
   name,

@@ -1,12 +1,5 @@
 import classes from "./article.module.css";
-
-type ArticleProps = {
-  id: string;
-  titleFirst: boolean;
-  name: string;
-  desc: string;
-  children?: React.ReactNode;
-};
+import { ArticleProps } from "../../../../App.types";
 
 const Article = ({ id, titleFirst, name, desc, children }: ArticleProps) => (
   <article id={id} className={classes.container}>
