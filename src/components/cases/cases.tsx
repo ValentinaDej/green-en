@@ -25,7 +25,7 @@ const Cases = () => {
     <article id="cases" className={`containerGlobal ${classes.container}`}>
       <h2 className={classes.title}>SUCCESSFUL CASES OF OUR COMPANY</h2>
 
-      <span className={classes.dividerColored}></span>
+      <span aria-hidden="true" className={classes.dividerColored}></span>
 
       <div className={classes.counter}>
         <span>{`${String(currentIndex + 1).padStart(2, "0")}`}</span>
@@ -35,10 +35,18 @@ const Cases = () => {
       </div>
 
       <div className={classes.buttons}>
-        <button className={classes.button} onClick={slideLeft}>
+        <button
+          aria-label="Go back"
+          className={classes.button}
+          onClick={slideLeft}
+        >
           ←
         </button>
-        <button className={classes.button} onClick={slideRight}>
+        <button
+          aria-label="Go forward"
+          className={classes.button}
+          onClick={slideRight}
+        >
           →
         </button>
       </div>
@@ -53,7 +61,7 @@ const Cases = () => {
         />
       </div>
 
-      <span className={classes.dividerTransp}></span>
+      <span aria-hidden="true" className={classes.dividerTransp}></span>
 
       <div className={classes.secondImageContainer}>
         <CaseCard

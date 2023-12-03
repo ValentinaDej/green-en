@@ -24,7 +24,7 @@ const Faq = () => {
           />
         ))}
       </div>
-      <span className={classes.line}></span>
+      <span aria-hidden="true" className={classes.line}></span>
 
       <div className={classes.text}>
         Didn`t find the answer to your question?

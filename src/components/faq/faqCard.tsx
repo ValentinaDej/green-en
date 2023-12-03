@@ -14,17 +14,25 @@ const FaqCard = ({ qw, answ, isOpen, toggleAccordion }: Props) => {
     <>
       <div className={classes.cardLine}></div>
       <div className={`${classes.card} ${isOpen ? classes.open : ""}`}>
-        <div className={classes.row}>
-          <div className={classes.icon} onClick={toggleAccordion}>
+        <div
+          className={classes.row}
+          onClick={toggleAccordion}
+          aria-controls="content"
+        >
+          <div
+            role="button"
+            aria-label="icon for opening"
+            className={classes.icon}
+          >
             {isOpen ? <Minus /> : <Plus />}
           </div>
-          <div className={classes.question} onClick={toggleAccordion}>
+          <div role="button" className={classes.question}>
             {qw}
           </div>
         </div>
         {isOpen && (
-          <div className={classes.row}>
-            <div className={classes.iconPlaceholder}></div>
+          <div id="content" className={classes.row}>
+            <div aria-hidden="true" className={classes.iconPlaceholder}></div>
             <div className={classes.answer}>{answ}</div>
           </div>
         )}

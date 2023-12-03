@@ -35,8 +35,8 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
-  { id: 1, href: "/", icon: Facebook },
-  { id: 2, href: "/", icon: Instagram },
+  { id: 1, href: "https://www.facebook.com/", icon: Facebook },
+  { id: 2, href: "https://www.instagram.com/", icon: Instagram },
 ];
 
 export const introductionArticleContent = {

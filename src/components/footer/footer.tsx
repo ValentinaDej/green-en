@@ -23,7 +23,11 @@ function Footer() {
         </Link>
       </div>
       <div className={classes.footerButton}>
-        <a href="#main" className={classes.footerToTop}>
+        <a
+          aria-label="Up to the page main"
+          href="#main"
+          className={classes.footerToTop}
+        >
           ↑
         </a>
       </div>

@@ -13,17 +13,26 @@ const NavMenu = ({ toggleMenu }: Props) => {
   return (
     <div className={classes.menu}>
       <div className={classes.menuClose}>
-        <Close onClick={toggleMenu} className={classes.menuCommonIcon} />
-        <span onClick={toggleMenu}>close</span>
+        <Close
+          role="button"
+          onClick={toggleMenu}
+          className={classes.menuCommonIcon}
+          aria-label="Close"
+        />
+        <div role="button" onClick={toggleMenu}>
+          close
+        </div>
       </div>
 
       <div className={classes.menuContent}>
-        <ul>
+        <ul onClick={toggleMenu}>
           {navLinks.map((item) => (
             <li key={item.label} className={classes.menuItem}>
               <Link href={item.href}>
-                <span className={classes.menuItemText}> {item.label}</span>
-                <span>
+                <span role="button" className={classes.menuItemText}>
+                  {item.label}
+                </span>
+                <span role="button">
                   <item.icon className={classes.menuItemIcon} />
                 </span>
               </Link>

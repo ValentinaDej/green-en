@@ -11,7 +11,7 @@ const Contact = () => {
         <section className={classes.contact}>
           <ContactCard />
         </section>
-        <span className={classes.line}></span>
+        <span aria-hidden="true" className={classes.line}></span>
         <section className={classes.form}>
           <ContactForm />
         </section>

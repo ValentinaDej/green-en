@@ -9,9 +9,14 @@ const SocialLinks = ({ socialLinks, mode }: Props) => {
   return (
     <div className={classes.group}>
       {socialLinks.map((item: any) => (
-        <Link key={item.id} href={item.href}>
+        <a
+          target="_blank"
+          href={item.href}
+          rel="noopener noreferrer"
+          aria-label="Link to social network"
+        >
           <item.icon className={`${classes.item} ${classes[mode]}`} />
-        </Link>
+        </a>
       ))}
     </div>
   );

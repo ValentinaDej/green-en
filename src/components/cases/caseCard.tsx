@@ -22,7 +22,7 @@ const CaseCard = ({
         <Image
           src={photo}
           alt={name}
-          width={600}
+          width={300}
           height={150}
           layout="responsive"
           priority

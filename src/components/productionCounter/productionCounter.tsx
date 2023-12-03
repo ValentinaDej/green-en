@@ -32,7 +32,7 @@ const ProductionCounter = () => {
         for all time
       </h2>
 
-      <span className={classes.separator}></span>
+      <span aria-hidden="true" className={classes.separator}></span>
       <section className={classes.counter}>
         <div className={classes.counterGrid}>
           <div className={`${classes.counterNumber}`}>

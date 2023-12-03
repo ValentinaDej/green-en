@@ -24,7 +24,7 @@ const Nav = () => {
   };
   return (
     <header>
-      <nav className={classes.container}>
+      <nav className={classes.container} role="navigation">
         <div className={classes.navLogo}>
           <Link href="/">
             <Image
@@ -42,11 +42,12 @@ const Nav = () => {
           <Link href="/">
             <Image
               src={hamburger}
-              alt="Hamburger"
+              alt="menu icon"
               width={25}
               height={25}
               priority
               onClick={toggleMenu}
+              role="button"
             />
           </Link>
 
