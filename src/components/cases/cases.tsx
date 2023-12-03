@@ -5,6 +5,9 @@ import classes from "./cases.module.css";
 
 const Cases = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const minSwipeDistance = 50;
 
   const slideLeft = () => {
     setCurrentIndex((prevIndex) =>
@@ -16,6 +19,29 @@ const Cases = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === casesList.length - 1 ? 0 : prevIndex + 1
     );
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+    const isSwipeRight = distance > minSwipeDistance;
+    const isSwipeLeft = distance < -minSwipeDistance;
+
+    if (isSwipeRight) {
+      slideRight();
+    } else if (isSwipeLeft) {
+      slideLeft();
+    }
   };
 
   const activeSlide = casesList[currentIndex];
@@ -51,7 +77,12 @@ const Cases = () => {
         </button>
       </div>
 
-      <div className={classes.imageContainer}>
+      <div
+        className={classes.imageContainer}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <CaseCard
           name={activeSlide.name}
           address={activeSlide.address}
@@ -63,7 +94,12 @@ const Cases = () => {
 
       <span aria-hidden="true" className={classes.dividerTransp}></span>
 
-      <div className={classes.secondImageContainer}>
+      <div
+        className={classes.secondImageContainer}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <CaseCard
           name={nextSlide.name}
           address={nextSlide.address}
