@@ -59,7 +59,7 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.dividerColored {
+.divider {
   display: none;
 }
 
@@ -99,18 +99,13 @@
     width: 100%;
   }
 
-  .dividerTransp {
-    grid-column: 3 / 4;
-    grid-row: 1 / span 2;
-    background-color: transparent;
-    width: 1px;
-  }
-
-  .dividerColored {
+  .divider {
+    display: block;
     grid-column: 3 / 4;
     grid-row: 1;
     background-color: var(--color-primary-dark);
     width: 1px;
+    align-self: stretch;
   }
 }
 

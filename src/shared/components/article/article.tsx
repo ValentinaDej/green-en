@@ -9,7 +9,7 @@ const Article = ({ id, titleFirst, name, desc, children }: ArticleProps) => (
       </h2>
     </header>
 
-    <span aria-hidden="true" className={classes.line}></span>
+    <span aria-hidden="true" className={classes.divider}></span>
 
     <section
       className={

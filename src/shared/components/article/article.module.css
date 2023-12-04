@@ -29,7 +29,7 @@
     max-width: 768px;
   }
 
-  .line {
+  .divider {
     grid-area: line;
     background-color: var(--color-primary-dark);
     width: 1px;

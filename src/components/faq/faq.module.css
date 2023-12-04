@@ -38,7 +38,7 @@
     gap: 12px;
   }
 
-  .line {
+  .divider {
     grid-area: line;
     width: 1px;
     align-self: stretch;

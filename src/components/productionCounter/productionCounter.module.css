@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-.separator {
+.divider {
   grid-column: 2;
   background: var(--color-primary-dark);
   width: 1px;
@@ -73,7 +73,7 @@
     font-size: 28px;
   }
 
-  .separator:first-of-type {
+  .divider {
     height: 87px;
   }
 }

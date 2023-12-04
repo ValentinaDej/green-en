@@ -54,7 +54,7 @@ const Cases = () => {
     <article id="cases" className={`containerGlobal ${classes.container}`}>
       <h2 className={classes.title}>SUCCESSFUL CASES OF OUR COMPANY</h2>
 
-      <span aria-hidden="true" className={classes.dividerColored}></span>
+      <span aria-hidden="true" className={classes.divider}></span>
 
       <div className={classes.counter}>
         <span>{`${String(currentIndex + 1).padStart(2, "0")}`}</span>
@@ -96,8 +96,6 @@ const Cases = () => {
           photo={activeSlide.photo}
         />
       </div>
-
-      <span aria-hidden="true" className={classes.dividerTransp}></span>
 
       <div
         className={classes.secondImageContainer}
