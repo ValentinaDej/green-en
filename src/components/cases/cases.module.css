@@ -22,7 +22,7 @@
 }
 
 .counterCommon {
-  color: var(--color-accent-25);
+  color: var(--color-accent-dark-25);
 }
 
 .buttons {
@@ -36,7 +36,7 @@
   height: 66px;
   border-radius: 50%;
   outline: none;
-  border: 1px solid var(--color-text-main);
+  border: 1px solid var(--color-text-primary);
   cursor: pointer;
 }
 
@@ -109,7 +109,7 @@
   .dividerColored {
     grid-column: 3 / 4;
     grid-row: 1;
-    background-color: var(--color-primary-600);
+    background-color: var(--color-primary-dark);
     width: 1px;
   }
 }

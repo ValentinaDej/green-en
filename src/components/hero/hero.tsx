@@ -18,7 +18,7 @@ const Hero = () => {
           biomass
         </p>
       </section>
-      <div className="grigRowCenterToBlockLeft">
+      <div className={clasess.grigRowCenterToBlockLeft}>
         <Button link="#cases" label="Go back" text="Learn more" variant="oval">
           <ArrowUp className={clasess.icon} />
         </Button>
@@ -26,7 +26,7 @@ const Hero = () => {
 
       <div className={clasess.horizontalLine}></div>
 
-      <div className="grigRowCenterToBlockLeft">
+      <div className={clasess.grigRowCenterToBlockLeft}>
         <p>{masterData.address}</p>
       </div>
       <div className={clasess.contactContainer}>
@@ -34,7 +34,7 @@ const Hero = () => {
         <p className={clasess.elHidden}>{masterData.copySign}</p>
       </div>
 
-      <div className="fullWidthContent">
+      <div className={clasess.fullWidthContent}>
         <Image
           src={banerImage}
           alt="wind, turbine clean energy"

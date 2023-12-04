@@ -24,7 +24,7 @@
 
 .separator {
   grid-column: 2;
-  background: var(--color-primary-600);
+  background: var(--color-primary-dark);
   width: 1px;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .counterNumber {
-  color: var(--color-primary-600);
+  color: var(--color-primary-dark);
   font-size: 48px;
   font-weight: 600;
   animation: fadeIn 0.5s ease-out;

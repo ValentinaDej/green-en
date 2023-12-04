@@ -21,16 +21,16 @@
 .textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--color-primary-600);
+  border-bottom: 1px solid var(--color-primary-dark);
   padding: 8px 0px;
   font-size: 18px;
-  color: var(--color-text-add);
+  color: var(--color-text-secondary);
 }
 
 .input:focus,
 .textarea:focus {
   outline: none;
-  border-bottom: 1px solid var(--color-text-main);
+  border-bottom: 1px solid var(--color-text-primary);
 }
 
 .textarea {

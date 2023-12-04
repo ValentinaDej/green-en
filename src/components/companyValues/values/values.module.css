@@ -10,7 +10,7 @@
 }
 
 .textContainer {
-  background-color: var(--color-background-main);
+  background-color: var(--color-background-default);
   padding: 12px 12px;
   text-align: justify;
 }

@@ -13,7 +13,7 @@
 }
 
 .position {
-  color: var(--color-text-add);
+  color: var(--color-text-secondary);
 }
 
 @media (min-width: 768px) {

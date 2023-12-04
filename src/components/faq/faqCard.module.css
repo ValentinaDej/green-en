@@ -32,7 +32,7 @@
 
 .cardLine {
   height: 1px;
-  background-color: var(--color-primary-600);
+  background-color: var(--color-primary-dark);
   margin-bottom: 16px;
 }
 

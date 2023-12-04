@@ -15,7 +15,7 @@
   grid-template-rows: 1fr 1px auto;
   row-gap: 14px;
   padding: 24px 12px 12px 12px;
-  background-color: var(--color-background-main);
+  background-color: var(--color-background-default);
   width: 100%;
 }
 
@@ -37,7 +37,7 @@
 
 .line {
   grid-column: 1 / -1;
-  background-color: var(--color-primary-600);
+  background-color: var(--color-primary-dark);
   height: 1px;
   width: 100%;
 }
@@ -54,7 +54,7 @@
 }
 
 .icon {
-  stroke: var(--color-text-main);
+  stroke: var(--color-text-primary);
 }
 
 @media (min-width: 768px) {

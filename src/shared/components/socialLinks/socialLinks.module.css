@@ -10,17 +10,17 @@
 }
 
 .darkMode {
-  stroke: var(--color-text-main);
+  stroke: var(--color-text-primary);
 }
 
 .darkMode:hover {
-  stroke: var(--color-menu-icon);
+  stroke: var(--color-menu-icon-light);
 }
 
 .lightMode {
-  stroke: var(--color-menu-text-100);
+  stroke: var(--color-white-100);
 }
 
 .lightMode:hover {
-  stroke: var(--color-menu-icon);
+  stroke: var(--color-menu-icon-light);
 }
