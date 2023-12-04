@@ -1,12 +1,15 @@
+/* .fixed {
+  position: fixed;
+} */
+
 .container {
   display: grid;
-  grid-template-columns: 290px auto;
+  grid-template-columns: 1fr auto;
   gap: 12px;
   align-items: center;
   max-width: 460px;
   padding-top: 36px;
   position: relative;
-  border: 1px solid red;
 }
 
 .nav {
@@ -20,6 +23,7 @@
 .navLogo {
   text-align: left;
   margin: 0px;
+  max-width: 290px;
 }
 
 .navHidden {

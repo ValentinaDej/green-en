@@ -73,9 +73,9 @@ address {
   padding: 0; 
 }
 
+
 .containerGlobal {
   max-width: 460px;
-  border: 1px solid red;
 }
 
 @media (min-width: 768px) {

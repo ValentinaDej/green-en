@@ -47,3 +47,18 @@ export type socialLinksProps = {
   socialLinks: any;
   mode: string;
 };
+
+export type ButtonProps = {
+  children?: React.ReactNode;
+  link?: string;
+  onClick?: () => void;
+  text?: string;
+  className?: string;
+  variant?:
+    | "round"
+    | "oval"
+    | "navigationButton"
+    | "sliderButton"
+    | "ovalWithDot";
+  label?: string;
+};

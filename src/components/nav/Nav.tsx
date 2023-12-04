@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 
 import NavMenu from "./menu/NavMenu";
 import { masterData } from "@/constants";
-import { hamburger } from "@/assets/icons";
 import Button from "@/shared/components/button/button";
 import Menu from "@/shared/icons/Menu";
 import classes from "./Nav.module.css";
@@ -23,9 +22,11 @@ const Nav = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
     <header id="nav">
       <nav className={classes.container} role="navigation">
+        {/* <div className={classes.fixed}> */}
         <div className={classes.navLogo}>
           <Link href="/">
             <Image
@@ -38,7 +39,6 @@ const Nav = () => {
             />
           </Link>
         </div>
-
         <div className={classes.nav}>
           <Button
             variant="navigationButton"
@@ -58,6 +58,8 @@ const Nav = () => {
             </div>
           </div>
         </div>
+        {/* </div> */}
+
         {isMenuOpen && (
           <div className={classes.navPosition}>
             <div className={classes.navHidenSubPosition}></div>

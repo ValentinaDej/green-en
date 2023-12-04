@@ -1,23 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import classes from "./button.module.css";
+import { ButtonProps } from "../../../../App.types";
 
-type ButtonProps = {
-  children?: React.ReactNode;
-  link?: string;
-  onClick?: () => void;
-  text?: string;
-  className?: string;
-  variant?:
-    | "round"
-    | "oval"
-    | "navigationButton"
-    | "sliderButton"
-    | "ovalWithDot";
-  label?: string;
-};
-
-const Button: React.FC<ButtonProps> = ({
+const Button = ({
   children,
   link,
   onClick,
@@ -26,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({
   variant,
   label,
   ...props
-}) => {
+}: ButtonProps) => {
   let buttonClasses = `${classes.button}`;
   if (variant) {
     buttonClasses = `${classes.button} ${classes[variant]} ${className || ""}`;
