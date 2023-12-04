@@ -26,6 +26,8 @@
 }
 
 .buttons {
+  display: flex;
+  gap: 24px;
   margin-right: 0;
 }
 

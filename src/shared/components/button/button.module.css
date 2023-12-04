@@ -1,17 +1,101 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   cursor: pointer;
-  /* Базові стилі для всіх кнопок */
+  border-radius: 50%;
+  width: 40px;
+  height: 39px;
 }
 
 .round {
-  border-radius: 50%;
-  padding: 1em;
-  /* Стилі для круглих кнопок */
+  background-color: var(--color-primary-600);
+}
+
+.round:hover {
+  border: 1px solid var(--color-primary-600);
+  background-color: var(--color-menu-text-100);
+}
+
+.navigationButton {
+  background-color: var(--color-primary-500);
+}
+
+.navigationButton:hover {
+  border: 1px solid var(--color-primary-600);
+  background-color: var(--color-menu-text-100);
+}
+
+.sliderButton {
+  background-color: transparent;
+  border: 1px solid var(--color-text-main);
+  width: 66px;
+  height: 66px;
+}
+
+.sliderButton:hover {
+  border: 1px solid var(--color-primary-600);
+  background-color: var(--color-menu-text-100);
 }
 
 .oval {
+  padding: 10px 1px 10px 16px;
+  width: 142px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-600);
   border-radius: 20px;
-  padding: 0.5em 1em;
-  /* Стилі для овальних кнопок */
+  color: var(--color-text-main);
+}
+
+.text,
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.oval:hover {
+  color: var(--color-text-main);
+  background-color: var(--color-primary-600);
+  color: var(--color-menu-text-100);
+}
+
+.oval .icon {
+  background-color: var(--color-primary-600);
+}
+
+.oval:hover .icon {
+  background-color: var(--color-menu-text-100);
+}
+
+.ovalWithDot {
+  padding: 10px 1px 10px 16px;
+  width: 142px;
+  background-color: var(--color-primary-600);
+  border-radius: 20px;
+  color: var(--color-text-main);
+}
+
+.ovalWithDot .icon {
+  background-color: var(--color-text-main);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.ovalWithDot:hover {
+  color: var(--color-text-main);
+  background-color: var(--color-primary-600);
+  color: var(--color-menu-text-100);
+}
+
+.ovalWithDot:hover .icon {
+  background-color: var(--color-menu-text-100);
 }

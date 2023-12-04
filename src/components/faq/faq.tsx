@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FaqCard from "./faqCard";
 import { faqList } from "@/constants";
 import classes from "./faq.module.css";
+import Button from "@/shared/components/button/button";
 
 const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -29,9 +30,7 @@ const Faq = () => {
       <div className={classes.text}>
         Didn`t find the answer to your question?
       </div>
-      <div className={classes.button}>
-        <a href="#contact">Contact Us</a>
-      </div>
+      <Button link="#contact" text="Contact us" variant="ovalWithDot" />
     </article>
   );
 };

@@ -4,6 +4,8 @@ import Image from "next/image";
 import classes from "./footer.module.css";
 import SocialLinks from "@/shared/components/socialLinks/socialLinks";
 import { socialLinks, masterData } from "@/constants";
+import Button from "@/shared/components/button/button";
+import ArrowUp from "@/shared/icons/ArrowUp";
 
 function Footer() {
   const { logo, address, email, copySign } = masterData;
@@ -22,15 +24,13 @@ function Footer() {
           />
         </Link>
       </div>
+
       <div className={classes.footerButton}>
-        <a
-          aria-label="Up to the page main"
-          href="#main"
-          className={classes.footerToTop}
-        >
-          ↑
-        </a>
+        <Button link="#nav" label="Up to the page main" variant="round">
+          <ArrowUp className={classes.icon} />
+        </Button>
       </div>
+
       <div className={classes.footerSocials}>
         <SocialLinks mode="darkMode" socialLinks={socialLinks} />
       </div>

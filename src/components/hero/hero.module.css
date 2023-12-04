@@ -43,6 +43,10 @@
   padding-top: 36px;
 }
 
+.icon {
+  transform: rotate(90deg);
+}
+
 @media (min-width: 768px) {
   .containerGrid {
     padding-top: 164px;

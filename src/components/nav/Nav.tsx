@@ -24,7 +24,7 @@ const Nav = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <header>
+    <header id="nav">
       <nav className={classes.container} role="navigation">
         <div className={classes.navLogo}>
           <Link href="/">
@@ -40,26 +40,21 @@ const Nav = () => {
         </div>
 
         <div className={classes.nav}>
-          {/* <Link href="/">
-            <Image
-              src={hamburger}
-              alt="menu icon"
-              width={25}
-              height={25}
-              priority
-              onClick={toggleMenu}
-              role="button"
-            />
-          </Link> */}
-          <Button variant="round" color="red">
+          <Button
+            variant="navigationButton"
+            onClick={toggleMenu}
+            label="Menu button"
+          >
             <Menu />
           </Button>
 
           <div className={classes.navHidden}>
             <div>
-              <Link href="#contact">
-                <div>Get in touch</div>
-              </Link>
+              <Button
+                link="#contact"
+                text="Get in touch"
+                variant="ovalWithDot"
+              />
             </div>
           </div>
         </div>

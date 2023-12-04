@@ -1,5 +1,7 @@
 import React from "react";
 import classes from "./contactForm.module.css";
+import Button from "@/shared/components/button/button";
+import ArrowUp from "@/shared/icons/ArrowUp";
 
 function ContactForm() {
   return (
@@ -58,10 +60,9 @@ function ContactForm() {
           className={classes.textarea}
         ></textarea>
       </div>
-
-      <button type="button" className={classes.button}>
-        Send <span className={classes.arrow}>→</span>
-      </button>
+      <Button link="#cases" label="Go back" text="Learn more" variant="oval">
+        <ArrowUp className={classes.icon} />
+      </Button>
     </form>
   );
 }

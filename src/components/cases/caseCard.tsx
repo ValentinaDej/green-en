@@ -1,6 +1,8 @@
 import Image from "next/image";
 import classes from "./caseCard.module.css";
 import { CaseCardProps } from "../../../App.types";
+import Button from "@/shared/components/button/button";
+import ArrowRight from "@/shared/icons/ArrowRight";
 
 const CaseCard = ({
   name,
@@ -28,7 +30,15 @@ const CaseCard = ({
           <br />
           {address}
         </div>
-        <button className={classes.button}>Button</button>
+        <div className={classes.button}>
+          <Button
+            className={classes.button}
+            label="Go to succes story"
+            variant="round"
+          >
+            <ArrowRight className={classes.icon} />
+          </Button>
+        </div>
         <div className={classes.line}></div>
         <div className={classes.description}>{description}</div>
         <div className={classes.date}>{date}</div>

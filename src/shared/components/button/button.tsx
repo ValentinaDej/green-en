@@ -1,35 +1,54 @@
+import Link from "next/link";
 import React from "react";
-import classes from "./Button.module.css";
+import classes from "./button.module.css";
 
 type ButtonProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
+  link?: string;
   onClick?: () => void;
+  text?: string;
   className?: string;
-  variant: "round" | "oval";
-  color: string;
+  variant?:
+    | "round"
+    | "oval"
+    | "navigationButton"
+    | "sliderButton"
+    | "ovalWithDot";
+  label?: string;
 };
 
 const Button: React.FC<ButtonProps> = ({
   children,
+  link,
   onClick,
+  text,
   className,
   variant,
-  color,
+  label,
   ...props
 }) => {
-  const buttonClasses = `${classes.button} ${classes[variant]} ${
-    className || ""
-  }`;
-  const buttonStyle = { backgroundColor: `var(--color-${color})` };
+  let buttonClasses = `${classes.button}`;
+  if (variant) {
+    buttonClasses = `${classes.button} ${classes[variant]} ${className || ""}`;
+  }
+  if (link) {
+    return (
+      <Link href={link} aria-label={label} className={buttonClasses} {...props}>
+        {text && <div className="textClass">{text}</div>}
+        <span className={classes.icon}>{children}</span>
+      </Link>
+    );
+  }
 
   return (
     <button
       className={buttonClasses}
       onClick={onClick}
-      style={buttonStyle}
+      aria-label={label}
       {...props}
     >
-      {children}
+      {text && <div className="textClass">{text}</div>}
+      <span className={classes.icon}>{children}</span>
     </button>
   );
 };

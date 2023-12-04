@@ -31,9 +31,6 @@
 .button {
   grid-row: 1;
   margin-right: 0;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
   margin: auto;
   margin-right: 0;
 }
@@ -54,6 +51,10 @@
 .date {
   grid-row: 3;
   font-size: 12px;
+}
+
+.icon {
+  stroke: var(--color-text-main);
 }
 
 @media (min-width: 768px) {

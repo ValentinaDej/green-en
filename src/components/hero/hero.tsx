@@ -2,6 +2,8 @@ import Image from "next/image";
 import { masterData } from "@/constants";
 import { banerImage } from "@/assets/images";
 import clasess from "./hero.module.css";
+import Button from "@/shared/components/button/button";
+import ArrowUp from "@/shared/icons/ArrowUp";
 
 const Hero = () => {
   return (
@@ -17,11 +19,9 @@ const Hero = () => {
         </p>
       </section>
       <div className="grigRowCenterToBlockLeft">
-        <div>
-          <a href="#cases" className={clasess.learnmore}>
-            Learn more →
-          </a>
-        </div>
+        <Button link="#cases" label="Go back" text="Learn more" variant="oval">
+          <ArrowUp className={clasess.icon} />
+        </Button>
       </div>
 
       <div className={clasess.horizontalLine}></div>

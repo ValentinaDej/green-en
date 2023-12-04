@@ -38,7 +38,7 @@
   resize: vertical;
 }
 
-.button {
+/* .button {
   padding: 10px 15px;
   color: white;
   background-color: #4caf50;
@@ -62,6 +62,10 @@
 
 .button:hover .arrow {
   transform: translateX(5px);
+} */
+
+.icon {
+  transform: rotate(90deg);
 }
 
 @media (min-width: 768px) {

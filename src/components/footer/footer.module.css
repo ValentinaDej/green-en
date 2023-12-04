@@ -28,19 +28,16 @@
   margin-right: 0;
 }
 
-.footerToTop {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: var(--color-primary-600);
-}
-
 .footerSocials,
 .footerAddress,
 .footerEmail,
 .footerInfo {
   grid-column: 1 / -1;
   text-align: center;
+}
+
+.icon {
+  stroke: var(--color-text-main);
 }
 
 @media (min-width: 768px) {

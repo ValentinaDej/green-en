@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import CaseCard from "./caseCard";
 import { casesList } from "@/constants";
 import classes from "./cases.module.css";
+import Button from "@/shared/components/button/button";
+import GoLeft from "@/shared/icons/GoLeft";
+import GoRight from "@/shared/icons/GoRight";
 
 const Cases = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,20 +64,22 @@ const Cases = () => {
       </div>
 
       <div className={classes.buttons}>
-        <button
-          aria-label="Go back"
+        <Button
           className={classes.button}
           onClick={slideLeft}
+          label="Go back"
+          variant="sliderButton"
         >
-          ←
-        </button>
-        <button
-          aria-label="Go forward"
+          <GoLeft />
+        </Button>
+        <Button
           className={classes.button}
           onClick={slideRight}
+          label="Go forward"
+          variant="sliderButton"
         >
-          →
-        </button>
+          <GoRight />
+        </Button>
       </div>
 
       <div
