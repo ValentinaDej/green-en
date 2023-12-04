@@ -1,5 +1,5 @@
 import { ValueCardProps } from "../../../../App.types";
-import classes from "./ValueCard.module.css";
+import classes from "./valueCard.module.css";
 
 const ValueCard = ({ icon: Icon, title, description }: ValueCardProps) => {
   return (
