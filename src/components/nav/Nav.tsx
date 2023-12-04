@@ -24,9 +24,8 @@ const Nav = () => {
   };
 
   return (
-    <header id="nav">
-      <nav className={classes.container} role="navigation">
-        {/* <div className={classes.fixed}> */}
+    <nav className="containerGlobal" id="nav" role="navigation">
+      <div className={classes.container}>
         <div className={classes.navLogo}>
           <Link href="/">
             <Image
@@ -49,27 +48,19 @@ const Nav = () => {
           </Button>
 
           <div className={classes.navHidden}>
-            <div>
-              <Button
-                link="#contact"
-                text="Get in touch"
-                variant="ovalWithDot"
-              />
-            </div>
+            <Button link="#contact" text="Get in touch" variant="ovalWithDot" />
           </div>
         </div>
-        {/* </div> */}
-
-        {isMenuOpen && (
-          <div className={classes.navPosition}>
-            <div className={classes.navHidenSubPosition}></div>
-            <div className={classes.navSubPosition}>
-              <NavMenu toggleMenu={toggleMenu} />
-            </div>
+      </div>
+      {isMenuOpen && (
+        <div className={classes.navPosition}>
+          <div className={classes.navHidenSubPosition}></div>
+          <div className={classes.navSubPosition}>
+            <NavMenu toggleMenu={toggleMenu} />
           </div>
-        )}
-      </nav>
-    </header>
+        </div>
+      )}
+    </nav>
   );
 };
 
