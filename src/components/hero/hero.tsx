@@ -19,7 +19,13 @@ const Hero = () => {
         </p>
       </section>
       <div className={clasess.grigRowCenterToBlockLeft}>
-        <Button link="#cases" label="Go back" text="Learn more" variant="oval">
+        <Button
+          link="#cases"
+          label="Go back"
+          text="Learn more"
+          variant="oval"
+          className={clasess.button}
+        >
           <ArrowUp className={clasess.icon} />
         </Button>
       </div>
