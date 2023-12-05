@@ -34,7 +34,7 @@
 
 .navPosition {
   position: fixed;
-  width: 100%;
+  width: calc(100% - 40px);
   z-index: 1000;
   overflow-y: auto;
 }
@@ -53,6 +53,10 @@
   .container {
     width: 460px;
   }
+
+  .navPosition {
+    width: 460px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -69,11 +73,11 @@
   }
 
   .navPosition {
+    width: calc(100% - 40px);
     display: grid;
-    grid-template-columns: auto 365px;
+    grid-template-columns: 403px 365px;
     gap: 0;
   }
-
   .navSubPosition {
     width: 365px;
   }
@@ -87,7 +91,9 @@
   .container {
     width: 1240px;
   }
+
   .navPosition {
-    top: 24px;
+    grid-template-columns: 875px 365px;
+    top: 0px;
   }
 }
