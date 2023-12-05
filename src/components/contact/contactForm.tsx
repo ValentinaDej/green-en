@@ -60,7 +60,7 @@ function ContactForm() {
           className={classes.textarea}
         ></textarea>
       </div>
-      <Button link="#cases" text="Learn more" variant="oval">
+      <Button text="Send" variant="oval">
         <ArrowUp className={classes.icon} />
       </Button>
     </form>

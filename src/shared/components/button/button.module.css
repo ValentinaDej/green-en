@@ -69,6 +69,7 @@
 
 .oval .icon {
   background-color: var(--color-primary-dark);
+  margin: 0;
 }
 
 .oval:hover .icon {
